@@ -8,4 +8,8 @@ contract Twitter{
         tweets[msg.sender] = _tweet;
     }
 
+
+    function getTweet(address _owner)public view returns(string memory){
+        return tweets[_owner]
+    }
 }
